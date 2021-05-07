@@ -1,4 +1,4 @@
-async function dining() {
+async function windowAction() {
     const request = await fetch('/api/dining');
     const diningData = await request.json();
     console.log(diningData);
@@ -17,5 +17,4 @@ async function dining() {
 };
 
 
-
-window.onload = dining;
+window.onload = windowAction;
